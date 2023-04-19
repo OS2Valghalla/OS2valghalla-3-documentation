@@ -3,8 +3,12 @@
 # -- Project information
 
 project = 'OS2Valghalla'
-copyright = 'Copyright tekst'
-author = 'Auther navn'
+copyright = 'Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).'
+# URL for custom footer copyright and license
+html_context = {
+    'copyright_url': 'https://creativecommons.org/licenses/by-sa/4.0/'
+}
+author = 'OS2'
 
 release = '0.1'
 version = '0.1.0'

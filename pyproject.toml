@@ -4,5 +4,5 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "OS2Valghalla"
-authors = [{name = "Navn på author", email = "E-mail på author"}]
+authors = [{name = "OS2", email = "os2@os2.eu"}]
 dynamic = ["version", "description"]
