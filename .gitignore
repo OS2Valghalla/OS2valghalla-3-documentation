@@ -4,4 +4,4 @@
 
 /.vs
 /.vscode
-_build
+_build/html
