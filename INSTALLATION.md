@@ -32,3 +32,5 @@ $ sphinx-build docs/source docs/source_build/html
 ```
 
 The documentation HTML output files can be found under [source/_build](docs/source/_build/).
+
+:warning: **NOTE:** It is important that the selected Python intepreter is the same as where the required Python packages are installed. This is true whether the Python packages are installed globally or only in the virtual environment. See *[Manually specify an interpreter](https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter)* for more information.
