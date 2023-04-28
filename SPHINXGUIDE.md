@@ -10,12 +10,12 @@ The following extensions can be used to setup a live preview for editing. A live
 ### Esbonio (VS Studio Code extension)
 The VS Studio Code extension ["Esbonio"](https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio) can provide live-preview, syntax highlight, and auto-completion for reStructeredText.
 
-:warning: Be sure the right Python interpreter is selected before starting the Esbonio server. See the [*Build project*](INSTALLATION.md#3-build-the-project) section of the [Quick-start installation guide](INSTALLATION.md#3-build-the-project).
+> :warning: Be sure the right Python interpreter is selected before starting the Esbonio server. See the [*Build project*](INSTALLATION.md#3-build-the-project) section of the [Quick-start installation guide](INSTALLATION.md#3-build-the-project).
 
 ### reStructuredText (VS Studio Code extension)
 The VS Studio Code extension ["reStructuredText"](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext&ssr=false#overview) is the a live-preview extension officialle recommended by Read the Docs. Just like the ["Esbonio"](https://marketplace.visualstudio.com/items?itemName=swyddfa.esbonio) extension. it provides live-preview, syntax highlight, and auto-completion for reStructeredText.
 
-:warning: Be sure the right Python interpreter is selected before enabling the preview feature. See the [*Build project*](INSTALLATION.md#3-build-the-project) section of the [Quick-start installation guide](INSTALLATION.md#3-build-the-project).
+> :warning: Be sure the right Python interpreter is selected before enabling the preview feature. See the [*Build project*](INSTALLATION.md#3-build-the-project) section of the [Quick-start installation guide](INSTALLATION.md#3-build-the-project).
 
 ### Sphinx Autobuild
 [Sphinx Autobuild](https://sphinx-extensions.readthedocs.io/en/latest/sphinx-autobuild.html) is a Python extension, which means it does not require a specific code editor. The extension is not technically a live-preview, re-build HTML pages on save. The HTML pages are served directly in the browser, giving an exact preview of how the HTML pages will look on Read the Docs.
