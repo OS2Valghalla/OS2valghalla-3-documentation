@@ -1,8 +1,8 @@
 Welcome to the official documentation of OS2Valghalla
 =====================================================
 
-This library is the official documentation of **OS2Valghalla**.
-It pulls data from the `OS2Valghalla(Dev) <https://github.com/JesperBorup/OS2Valghalla/blob/main/>`_ GitHub repository.
+This library is the official documentation of **OS2Valghalla 3.0**.
+It pulls data from the `OS2Valghalla 3.0 <https://github.com/OS2Valghalla/OS2valghalla-3-documentation>`_ GitHub repository.
 
 .. note::
 
