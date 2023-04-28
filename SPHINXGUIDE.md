@@ -21,7 +21,7 @@ This extension provides almost the same features as the [Esbonio](#esbonio-vs-st
 > :warning: Be sure the right Python interpreter is selected before enabling the preview feature. See the [*Build project*](INSTALLATION.md#3-build-the-project) section of the [Quick-start installation guide](INSTALLATION.md#3-build-the-project).
 
 ### Sphinx Autobuild
-[Sphinx Autobuild](https://sphinx-extensions.readthedocs.io/en/latest/sphinx-autobuild.html) is a Python extension, which means it does not require a specific code editor. The extension is not technically a live-preview, re-build HTML pages on save. The HTML pages are served directly in the browser, giving an exact preview of how the HTML pages will look on Read the Docs.
+[Sphinx Autobuild](https://sphinx-extensions.readthedocs.io/en/latest/sphinx-autobuild.html) is a Python extension, which means it does not require a specific code editor. The extension is not technically a live-preview, as it re-builds HTML pages on save. The HTML pages are served locally and can be accessed directly in the browser, giving an exact preview of how the HTML pages will look when hosted online, such as on Read the Docs.
 
 To setup the extension for this project, run the following command in the environment:
 ```
