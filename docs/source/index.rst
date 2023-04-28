@@ -1,11 +1,8 @@
 Welcome to the official documentation of OS2Valghalla
-===================================
+=====================================================
 
 This library is the official documentation of **OS2Valghalla**.
-It pulls data from the `OS2Valghalla <https://github.com/OS2Valghalla/OS2valghalla-3-documentation>`_ GitHub repository.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installpackages`.
+It pulls data from the `OS2Valghalla(Dev) <https://github.com/JesperBorup/OS2Valghalla/blob/main/>`_ GitHub repository.
 
 .. note::
 
@@ -15,6 +12,7 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 4
 
-   usage
-   api
+   user-interface-design/index
+   user-interface-guidelines/index
