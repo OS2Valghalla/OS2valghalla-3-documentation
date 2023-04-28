@@ -14,6 +14,8 @@ git clone https://github.com/OS2Valghalla/OS2valghalla-3-documentation.git
 Python 3.10 or newer is required to build the project. 
 
 Python for Windows, Linux/UNIX, and macOS can be found at [www.python.org/downloads](https://www.python.org/downloads/).
+
+Make sure Python is available in PATH.
 ### 2.2 Python packages
 The project relies on [pip](https://pip.pypa.io/en/stable/) to install required packages.
 
