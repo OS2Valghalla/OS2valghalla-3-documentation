@@ -4,6 +4,7 @@ This guide will help you understand how to use Sphinx and write documentation in
 Work in progress, more content to be added.
 
 # Extensions
+This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
 ## Live Preview
 The following extensions can be used to setup a live preview for editing. A live preview shows the output HTML files in real time while editing.
 
