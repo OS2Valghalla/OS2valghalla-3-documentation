@@ -1,7 +1,20 @@
 # Quick-start Sphinx and reStructuredText guide
-This guide will help you understand how to use Sphinx and write documentation in reStructuredText markup.
+This guide will help you get started with Sphinx and write documentation in reStructuredText markup.
 
 Work in progress, more content to be added.
+# Sphinx
+This section will cover:
+1. How to create and structure documentation pages
+2. Basic templating and theming
+3. How to build the project
+
+# reStructuredText
+This section will cover:
+1. General syntax of RST markdown
+2. Common components
+3. How to create and structure documentation pages
+4. How to use directives
+5. How to use roles
 
 # Extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
@@ -32,3 +45,10 @@ Then run the following to enable re-building on save:
 sphinx-autobuild docs/source docs/source/_build/html
 ```
 By default the HTML files can be accessed in the browser at ```http://127.0.0.1:8000/```.
+
+### reStructuredText Syntax highlighting (VS Code extension)
+The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst&ssr=false#review-details) extension for VS Code makes easier to differentiate text and components in the markdown.
+
+A syntax highlight extension is highly recommended, as reStructuredText is fairly complex and hard to work with without any syntax highlighting. Visual Studio Code does not have out-of-the-box syntax highlight support for reStructuredText.
+
+**Note** that both the [Esbonio](#restructuredtext-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
