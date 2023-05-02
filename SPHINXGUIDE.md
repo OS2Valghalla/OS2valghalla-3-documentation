@@ -46,6 +46,9 @@ sphinx-autobuild docs/source docs/source/_build/html
 ```
 By default the HTML files can be accessed in the browser at ```http://127.0.0.1:8000/```.
 
+## Syntax and formatting
+The following extensions can help improve the experience of syntax and formatting.
+
 ### reStructuredText Syntax highlighting (VS Code extension)
 The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst&ssr=false#review-details) extension for VS Code makes easier to differentiate text and components in the markdown.
 
