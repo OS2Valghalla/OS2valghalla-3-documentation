@@ -102,6 +102,31 @@ Headers can be referenced using the ``:ref:`` role, as described in the [Hyperli
 There are several body elements supported by Sphinx out-of-the-box.
 
 ### Lists
+Bullet point lists needs to be prefixed with `*`
+```
+* Bullet point 1
+* Bullet point 2
+```
+Numbered lists needs to be prefixed with a number and a period
+```
+1. List item 1
+2. List item 2
+```
+Numbered lists can also be autonumbered using `#`
+```
+#. List item 1
+#. List item 2
+```
+Nested lists can be created by add a line-break after the parent list item and indenting the nested list item with two spaces:
+```
+* List item 1
+* List item 2
+
+  * Nested item 1
+  * Nested item 2
+
+*  List item 3
+```
 
 ### Line blocks
 
@@ -137,7 +162,7 @@ Example of inserting a figure with a caption:
 ```
 .. figure:: image1.png
 
-   This is the caption of the figure (a simple paragraph).
+   This is the caption of the figure.
 ```
 **Note:** it is important that there is a line-break between the image and the caption, and that there is a space before the caption.
 
