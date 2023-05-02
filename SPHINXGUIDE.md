@@ -9,6 +9,7 @@ This section will cover:
 3. How to build the project
 
 ## 1. How to create and structure documentation pages
+This section describes how to create new pages and how to structure their hierarchy within the documentation.
 
 # reStructuredText
 This section will cover:
@@ -19,7 +20,7 @@ This section will cover:
 5. How to use roles
 
 ## 1. General syntax and formatting
-This section would describe commonly used syntax and formatting.
+This section describes commonly used syntax and formatting.
 ### Standard inline markup
 * *Italic* text: Use one asterisks to create bold text, for example ``*text*``
 * **Bold** text: Use two asterisks to create bold text, for example `**text**`
@@ -100,6 +101,8 @@ Headers can be referenced using the ``:ref:`` role, as described in the [Hyperli
 
 ## 2. Common elements
 There are several body elements supported by Sphinx out-of-the-box.
+
+## Table of content
 
 ### Lists
 Bullet point lists needs to be prefixed with `*`
