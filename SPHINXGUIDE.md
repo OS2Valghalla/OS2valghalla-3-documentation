@@ -131,6 +131,15 @@ For example, if the subfolder is called media:
 ```
 
 ### Figures
+Figures act much like images, but makes it possible to add a caption to the image and an optional legend.
+
+Example of inserting a figure with a caption:
+```
+.. figure:: image1.png
+
+   This is the caption of the figure (a simple paragraph).
+```
+**Note:** it is important that there is a line-break between the image and the caption, and that there is a space before the caption.
 
 
 # Extensions
