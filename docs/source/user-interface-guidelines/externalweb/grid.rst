@@ -1,5 +1,5 @@
 Grid
-=====================
+====
 Information and screenshots of the grid.
 
 Layout

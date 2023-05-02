@@ -8,13 +8,22 @@ This section will cover:
 2. Basic templating and theming
 3. How to build the project
 
+## 1. How to create and structure documentation pages
+
 # reStructuredText
 This section will cover:
-1. General syntax of RST markdown
-2. Common components
+1. General syntax and formatting
+2. Common elements
 3. How to create and structure documentation pages
 4. How to use directives
 5. How to use roles
+
+## 1. General syntax and formatting
+This section would describe commonly used syntax and formatting.
+### Standard ilnine markup
+* **Bold** text: Use one asterisk to create bold text, for example `*text*`
+* *Italic* text: Use two asterisks to create bold text, for example ``**text**``
+* Code samples: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
 
 # Extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.

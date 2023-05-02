@@ -1,5 +1,5 @@
 Browser Support
-=====================
+===============
 Information about supported browsers.
 
 Supported browsers
