@@ -51,4 +51,4 @@ The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/i
 
 A syntax highlight extension is highly recommended, as reStructuredText is fairly complex and hard to work with without any syntax highlighting. Visual Studio Code does not have out-of-the-box syntax highlight support for reStructuredText.
 
-**Note** that both the [Esbonio](#restructuredtext-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
+**Note** that both the [Esbonio](#esbonio-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
