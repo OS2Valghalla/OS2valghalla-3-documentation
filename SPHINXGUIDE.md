@@ -21,13 +21,13 @@ This section will cover:
 ## 1. General syntax and formatting
 This section would describe commonly used syntax and formatting.
 ### Standard inline markup
-* **Bold** text: Use one asterisk to create bold text, for example `*text*`
-* *Italic* text: Use two asterisks to create bold text, for example ``**text**``
-* Code samples: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
+* *Italic* text: Use one asterisks to create bold text, for example ``*text*``
+* **Bold** text: Use two asterisk to create bold text, for example `**text**`
+* Inline code: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
 
 ### Hyperlinks
 There are two kinds of hyperlinks, external and internal.
-#### External hyperlinks
+#### **External hyperlinks**
 Standard hyperlinks needs to be wrapped in backquotes and suffixed with an underscore. 
 
 **Example:**
@@ -49,6 +49,54 @@ Target:
 .. _Google: https://google.com/
 ```
 The target needs to be place at the end of the section and be suffixed with `.._`.
+
+#### **Internal hyperlinks and cross-references**
+Internal hyperlinks are great for creating references to other pages or sections in the documentation. The element being referred to needs to have a reference label. 
+
+**For example:**
+```
+.. _dependencies-angular:
+Angular dependencies
+------------------------------
+```
+The section can then be referred to by using the built-in :ref: role. 
+
+**For example:**
+```
+See the section :ref:`dependencies-angular` to read more about Angular dependencies.
+```
+
+#### **Glossary of terms**
+The project comes with a pre-created glossary file. 
+
+Terms can be added to this glossary, which can then be used with the :ref: role.
+
+For example, to make a reference to a term in the glossary called “Angular”:
+```
+The framework :ref:`Angular` is used for this project.
+```
+
+### Sections and headers
+Sphinx pages support multiple levels of headings. Headings and sections are very important for the documentation, as they are automatically added to the navigation and table of contents, furthermore they can be referenced to from other pages in the documentation.
+
+Usually no more than 3 levels of headings are needed; title, subsection, and subsubsection.
+
+* **Titles** are underlined with ``=``
+* **Sections** are underlined with ``-``
+* **Subsection** are underlined with ``~``
+
+**Note:** It is important that the underlines are at least the same width as the header text, for example:
+```
+This title is underlined correctly
+==========================
+```
+```
+This title is NOT underlined correctly
+===========
+```
+Headers can be referenced using the ``:ref:`` role, as described in the [Hyperlinks](#hyperlinks) section.
+
+
 # Extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
 ## Live Preview
