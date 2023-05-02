@@ -20,11 +20,35 @@ This section will cover:
 
 ## 1. General syntax and formatting
 This section would describe commonly used syntax and formatting.
-### Standard ilnine markup
+### Standard inline markup
 * **Bold** text: Use one asterisk to create bold text, for example `*text*`
 * *Italic* text: Use two asterisks to create bold text, for example ``**text**``
 * Code samples: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
 
+### Hyperlinks
+There are two kinds of hyperlinks, external and internal.
+#### External hyperlinks
+Standard hyperlinks needs to be wrapped in backquotes and suffixed with an underscore. 
+
+**Example:**
+```
+`This is a link to Google <https://google.com/>`_
+```
+
+The link text and target can also be separated, which is useful if the same link is used several times.
+
+**Example:**
+
+Link text:
+```
+This is a link to `Google`_
+```
+
+Target:
+```
+.. _Google: https://google.com/
+```
+The target needs to be place at the end of the section and be suffixed with `.._`.
 # Extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
 ## Live Preview
