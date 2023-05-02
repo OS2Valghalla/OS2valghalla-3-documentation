@@ -22,7 +22,7 @@ This section will cover:
 This section would describe commonly used syntax and formatting.
 ### Standard inline markup
 * *Italic* text: Use one asterisks to create bold text, for example ``*text*``
-* **Bold** text: Use two asterisk to create bold text, for example `**text**`
+* **Bold** text: Use two asterisks to create bold text, for example `**text**`
 * Inline code: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
 
 ### Hyperlinks
@@ -56,6 +56,7 @@ Internal hyperlinks are great for creating references to other pages or sections
 **For example:**
 ```
 .. _dependencies-angular:
+
 Angular dependencies
 ------------------------------
 ```
@@ -95,6 +96,41 @@ This title is NOT underlined correctly
 ===========
 ```
 Headers can be referenced using the ``:ref:`` role, as described in the [Hyperlinks](#hyperlinks) section.
+
+
+## 2. Common elements
+There are several body elements supported by Sphinx out-of-the-box.
+
+### Lists
+
+### Line blocks
+
+### Code blocks
+
+### Tables
+
+### Images
+Images can be inserted in the content using the ``.. image`` directive.
+
+Example of external image:
+```
+.. image:: https://www.domain.com/image1.png
+```
+Example of internal image:
+```
+.. image:: image1.png
+```
+By default links to internal images have to be placed in the same folder as the RST page.
+It is good practice to use subfolders for media, to keep images and figures separate from RST pages. 
+
+To insert an image placed in a subfolder, the folder name needs to be suffixed.
+
+For example, if the subfolder is called media:
+```
+.. image:: media/image1.png
+```
+
+### Figures
 
 
 # Extensions
