@@ -98,7 +98,7 @@ Usually no more than 3 levels of headings are needed; title, subsection, and sub
 **Note:** It is important that the underlines are at least the same width as the header text, for example:
 ```
 This title is underlined correctly
-==========================
+==================================
 ```
 ```
 This title is NOT underlined correctly
