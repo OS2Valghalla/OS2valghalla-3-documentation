@@ -287,6 +287,34 @@ Example of inserting a figure with a caption:
 # 3. How to create and structure documentation pages
 This section will cover how to create new documentation pages, and how to structure them to create to correct hierarchy.
 
+Pages are created in the [docs/source](docs/source) folder.
+
+It is important to use the correct structure to create the correct hierarchy of pages and sub-pages. This hierarchy will automatically be used for the sidebar navigation and the [table of content](#table-of-content).
+
+This project supports pages up to a maximum depth of 3, excluding the frontpage.
+For example, to create a "User Interface Design" page, with "Administration" and "External Web" sub-pages, where each of them have their own "Dependencies" sub-page, the structure would be the following:
+```
+1. User Interface Design
+  1.1 Administration
+    1.1.1 Dependencies
+  1.2 External Web
+    1.2.1 Dependencies
+2. User Interface Guidelines
+```
+
+To create a sub-page, create a new sub-folder and a new RST in the folder. For instance, to create a the "Administration" sub-page and the "dependencies" sub-page shown above, use the following folder structure:
+
+```
+Administration page:
+user-interface-design/administration/index.rst
+Dependencies sub-page:
+user-interface-design/administration/dependencies/dependencies.rst
+```
+
+The filename `index.rst` is often used for the sub-page that includes the table of contents of the sub-pages.
+
+All RST pages needs to use the `.rst` filetype.
+
 # 4. Basic templating and theming
 This section will cover how to create new HTML templates and how to style them.
 
