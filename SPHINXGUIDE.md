@@ -8,7 +8,7 @@ This quick-guide will cover:
 2. [Common elements](#2-common-elements)
 3. [How to create and structure documentation pages](#3-how-to-create-and-structure-documentation-pages)
 4. [Basic templating and theming](#4-basic-templating-and-theming)
-5. [Recommended extensions](#5-extensions)
+5. [Recommended extensions](#5-recommended-extensions)
 
 ## 1. General syntax and formatting
 This section describes commonly used syntax and formatting.
