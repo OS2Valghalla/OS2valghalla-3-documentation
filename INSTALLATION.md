@@ -28,7 +28,7 @@ Building the sphinx project creates the documentation HTML files.
 
 To build the project, run the following command in the project environment:
 ```
-$ sphinx-build docs/source docs/source_build/html
+sphinx-build docs/source docs/source/_build/html
 ```
 
 The documentation HTML output files can be found under [source/_build](docs/source/_build/).
