@@ -176,7 +176,7 @@ Several types of notes are supported, such as warnings and hints. The `.. note` 
 **Example of a warning note**
 ```
 .. warning:: 
-   This is a note.
+   This is a warning note.
 ```
 These are the supported note types:
 * note
