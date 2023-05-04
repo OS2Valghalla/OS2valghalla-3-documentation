@@ -2,22 +2,13 @@
 This guide will help you get started with Sphinx and write documentation in reStructuredText markup.
 
 Work in progress, more content to be added.
-# Sphinx
-This section will cover:
-1. How to create and structure documentation pages
-2. Basic templating and theming
-3. How to build the project
 
-## 1. How to create and structure documentation pages
-This section describes how to create new pages and how to structure their hierarchy within the documentation.
-
-# reStructuredText
-This section will cover:
-1. General syntax and formatting
-2. Common elements
-3. How to create and structure documentation pages
-4. How to use directives
-5. How to use roles
+This quick-guide will cover:
+1. [General syntax and formatting](#1-general-syntax-and-formatting)
+2. [Common elements](#2-common-elements)
+3. [How to create and structure documentation pages](#3-how-to-create-and-structure-documentation-pages)
+4. [Basic templating and theming](#4-basic-templating-and-theming)
+5. [Recommended extensions](#5-extensions)
 
 ## 1. General syntax and formatting
 This section describes commonly used syntax and formatting.
@@ -25,6 +16,23 @@ This section describes commonly used syntax and formatting.
 * *Italic* text: Use one asterisks to create bold text, for example ``*text*``
 * **Bold** text: Use two asterisks to create bold text, for example `**text**`
 * Inline code: Use backquotes to create inline code, for instance ` ``text`` `. This converts the text to monospace font, adds a background, and changes the text color. This should only be used for simple code examples. For more advanced or multiline code use code blocks.
+
+### Comments
+Comments can be added in the markup, which does not display on the page itself. To create a comment prefix the comment text with `..`.
+
+**Example**
+```
+.. This is a comment.
+```
+
+To create a multiline comments, add a linebreak between the `..` prefix and the comment text, and indent each line with two whitespaces.
+
+**Example**
+```
+.. 
+  This is a multiline comment.
+  This is another line in the same comment.
+```
 
 ### Hyperlinks
 There are two kinds of hyperlinks, external and internal.
@@ -102,7 +110,30 @@ Headers can be referenced using the ``:ref:`` role, as described in the [Hyperli
 ## 2. Common elements
 There are several body elements supported by Sphinx out-of-the-box.
 
-## Table of content
+### Table of content
+Automatic generation of table of contents is one of the strongest features of Sphinx.
+
+To create a table of contents, the `.. toctree::` directive can be used. Pages can be added to the ToC by either referencing the name of the RST file itself, or use the title of the page.
+
+**Example**
+```
+.. toctree::
+
+   user-interface-design
+   user-interface-guidelines
+```
+
+The `.. toctree::` directive supports several options, such as numbering, max depth, and automatic inclusion of sub-pages. See the offical [Sphinx documentation of table of contents](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents) to read all possible options.
+
+**Example of a ToC using max-depth and automatic numbering**
+```
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   user-interface-design/index
+   user-interface-guidelines/index
+```
 
 ### Lists
 Bullet point lists needs to be prefixed with `*`
@@ -131,11 +162,95 @@ Nested lists can be created by add a line-break after the parent list item and i
 *  List item 3
 ```
 
+### Notes and warnings
+Notes and warnings are great for highlighting important information for the reader.
+A note can be created using the `.. note::` directive. A linebreak needs to be added after the note directive with the note text added underneath. The note text needs to be indented with two whitespaces.
+Example
+```
+.. note:: 
+   This is a note.
+   Multilines are supported.
+```
+#### Note types
+Several types of notes are supported, such as warnings and hints. The `.. note` part of the directive just have to be replaced with the name of the note type to be used.
+**Example of a warning note**
+```
+.. warning:: 
+   This is a note.
+```
+These are the supported note types:
+* note
+* warning
+* attention
+* caution
+* danger
+* error
+* hint
+* important
+* tip
+
 ### Line blocks
+Line blocks are used to create a block of indented text.
+
+To create a line block, the text should be prefixed with `::` and be followed by a linebreak before the line block text. The line block text itself has to be indented by two whitespaces.
+
+**Example**
+
+```
+This is a line block::
+  This is the text in the block
+
+  Multiline text is supported
+```
 
 ### Code blocks
+Code blocks are the standard way to create a block of code with code highlight.
+
+The code block can be created using the `.. code-block::` directive. To specificy a specific code language for highlighting, the directive should be followed by the name of the language.
+
+**Example of a code block with a standard Python loop**
+```
+.. code-block:: python
+
+   fruits = ["apple", "banana", "cherry"]
+   for x in fruits:
+   print(x)
+```
 
 ### Tables
+Sphinx support tables, with several options such as automatic with, alignments, grids, and CSV tables. See the [official documentation of the Sphinx Table directive](https://docutils.sourceforge.io/docs/ref/rst/directives.html#table) to read more.
+
+:warning: Since Sphinx is based on Python, every whitespace is important in the markup. It is recommended to use an extension to help formatting tables, such as the [Table Formatter](https://marketplace.visualstudio.com/items?itemName=shuworks.vscode-table-formatter) VS Code extension, mentioned in the [Recommended extensions](#5-recommended-extensions) section.
+
+**Example of a table with headers, two columns and three rows**
+```
+.. table:: 
+
+   ======  ======
+   Fruit   Amount
+   ======  ======
+   Banana  9
+   Apple   12
+   Cherry  5
+   ======  ======
+```
+
+The table directive also supports grid format
+
+**Example of grid table**
+```
+.. table:: 
+
+   +--------+--------+
+   | Fruit  | Amount |
+   +========+========+
+   | Banana | 9      |
+   +--------+--------+
+   | Apple  | 12     |
+   +--------+--------+
+   | Cherry | 5      |
+   +--------+--------+
+```
 
 ### Images
 Images can be inserted in the content using the ``.. image`` directive.
@@ -169,8 +284,13 @@ Example of inserting a figure with a caption:
 ```
 **Note:** it is important that there is a line-break between the image and the caption, and that there is a space before the caption.
 
+# 3. How to create and structure documentation pages
+This section will cover how to create new documentation pages, and how to structure them to create to correct hierarchy.
 
-# Extensions
+# 4. Basic templating and theming
+This section will cover how to create new HTML templates and how to style them.
+
+# 5. Recommended extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
 ## Live Preview
 The following extensions can be used to setup a live preview for editing. A live preview shows the output HTML files in real time while editing.
@@ -204,8 +324,11 @@ By default the HTML files can be accessed in the browser at ```http://127.0.0.1:
 The following extensions can help improve the experience of syntax and formatting.
 
 ### reStructuredText Syntax highlighting (VS Code extension)
-The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst&ssr=false#review-details) extension for VS Code makes it easier to differentiate text and components in the markdown.
+The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst&ssr=false#review-details) extension for VS Code makes it easier to differentiate text and components in the markiå.
 
 A syntax highlight extension is highly recommended, as reStructuredText is fairly complex and hard to work with without any syntax highlighting. Visual Studio Code does not have out-of-the-box syntax highlight support for reStructuredText.
 
 **Note** that both the [Esbonio](#esbonio-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
+
+### Table Formatter (VS Code extension)
+Creating and formatting tables in RST can be very complex, as correct use of whitespaces can make or break tables. Therefore the [Table Formatter](https://marketplace.visualstudio.com/items?itemName=shuworks.vscode-table-formatter) extension is recommended to help create correctly formatted tables.
