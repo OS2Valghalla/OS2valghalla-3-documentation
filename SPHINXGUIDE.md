@@ -7,7 +7,7 @@ This quick-guide will cover:
 1. [General syntax and formatting](#1-general-syntax-and-formatting)
 2. [Common elements](#2-common-elements)
 3. [How to create and structure documentation pages](#3-how-to-create-and-structure-documentation-pages)
-4. [Basic templating and theming](#4-basic-templating-and-theming)
+4. [Themes and templating](#4-basic-templating-and-theming)
 5. [Recommended extensions](#5-recommended-extensions)
 
 ## 1. General syntax and formatting
@@ -315,8 +315,23 @@ The filename `index.rst` is often used for the sub-page that includes the table 
 
 All RST pages needs to use the `.rst` filetype.
 
-# 4. Basic templating and theming
-This section will cover how to create new HTML templates and how to style them.
+# 4. Themes and templating
+This section will cover how to change the Sphinx theme, how to edit the HTML templates, and how to change the style of the theme
+
+## Themes
+Sphinx comes with several [default themes](https://www.sphinx-doc.org/en/master/usage/theming.html#builtin-themes). For this projet the [Read the Docs theme](https://github.com/readthedocs/sphinx_rtd_theme) is used, which will be installed when following the [Quick-start installation guide](INSTALLATION.md).
+
+The theme can be changed by editing the `html_theme` config value in the [conf.py](docs/source/conf.py) config file.
+
+It is also possible to create custom themes, which is described further in the official [Sphinx documentation](https://www.sphinx-doc.org/en/master/development/theming.html).
+
+## Templating
+The chosen theme can be further customized by editing or creating new HTML templates, placed in the [_templates](docs/source/_templates) subfolder. The template files are based on HTML markup but also supports [Jinja](https://jinja.palletsprojects.com/en/3.1.x/intro/) in order to implement variables and expressions. Templating is further described in the [official Sphinx documentation](https://www.sphinx-doc.org/en/master/development/templating.html#templating), including how to implement Jinja.
+
+## Styling
+Basic CSS can be used to style the HTML templates. Custom CSS stylesheets can be added to the [_static/css](docs/source/_static/css/theme.css) subfolder. To include the stylesheet when build the HTML files, the path of the CSS stylesheet have to added to the `html_static_path` in the [conf.py](docs/source/conf.py) config file. 
+
+This project comes with an empty CSS stylesheet called [custom.css](docs/source/_static/css/).
 
 # 5. Recommended extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
