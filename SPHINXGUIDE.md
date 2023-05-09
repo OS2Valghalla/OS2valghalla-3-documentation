@@ -95,7 +95,7 @@ Usually no more than 3 levels of headings are needed; title, subsection, and sub
 * **Sections** are underlined with ``-``
 * **Subsection** are underlined with ``~``
 
-**Note:** It is important that the underlines are at least the same width as the header text, for example:
+> :warning: **Note:** It is important that the underlines are at least the same width as the header text, for example:
 ```
 This title is underlined correctly
 ==================================
@@ -282,7 +282,7 @@ Example of inserting a figure with a caption:
 
    This is the caption of the figure.
 ```
-**Note:** it is important that there is a line-break between the image and the caption, and that there is a space before the caption.
+> :warning: **Note:** it is important that there is a line-break between the image and the caption, and that there is a space before the caption.
 
 # 3. How to create and structure documentation pages
 This section will cover how to create new documentation pages, and how to structure them to create to correct hierarchy.
@@ -371,7 +371,7 @@ The ["reStructuredText Syntax highlight"](https://marketplace.visualstudio.com/i
 
 A syntax highlight extension is highly recommended, as reStructuredText is fairly complex and hard to work with without any syntax highlighting. Visual Studio Code does not have out-of-the-box syntax highlight support for reStructuredText.
 
-**Note** that both the [Esbonio](#esbonio-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
+> :warning: **Note** that both the [Esbonio](#esbonio-vs-studio-code-extension) and the official [reStructedText](#restructuredtext-vs-studio-code-extension) extensions comes with their own syntax highlighter.
 
 ### Table Formatter (VS Code extension)
 Creating and formatting tables in RST can be very complex, as correct use of whitespaces can make or break tables. Therefore the [Table Formatter](https://marketplace.visualstudio.com/items?itemName=shuworks.vscode-table-formatter) extension is recommended to help create correctly formatted tables.
