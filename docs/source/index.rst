@@ -16,3 +16,4 @@ Contents
 
    user-interface-design/index
    user-interface-guidelines/index
+   glossary
