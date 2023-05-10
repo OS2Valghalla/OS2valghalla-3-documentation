@@ -329,7 +329,7 @@ It is also possible to create custom themes, which is described further in the o
 The chosen theme can be further customized by editing or creating new HTML templates, placed in the [_templates](docs/source/_templates) subfolder. The template files are based on HTML markup but also supports [Jinja](https://jinja.palletsprojects.com/en/3.1.x/intro/) in order to implement variables and expressions. Templating is further described in the [official Sphinx documentation](https://www.sphinx-doc.org/en/master/development/templating.html#templating), including how to implement Jinja.
 
 ## Styling
-Basic CSS can be used to style the HTML templates. Custom CSS stylesheets can be added to the [_static/css](docs/source/_static/css/theme.css) subfolder. To include the stylesheet when build the HTML files, the path of the CSS stylesheet have to added to the `html_static_path` in the [conf.py](docs/source/conf.py) config file. 
+Basic CSS can be used to style the HTML templates. Custom CSS stylesheets can be added to the [_static/css](docs/source/_static/css) subfolder. To include the stylesheet when build the HTML files, the path of the CSS stylesheet have to added to the `html_static_path` in the [conf.py](docs/source/conf.py) config file. 
 
 This project comes with an empty CSS stylesheet called [custom.css](docs/source/_static/css/custom.css).
 
