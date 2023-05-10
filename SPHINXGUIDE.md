@@ -7,7 +7,7 @@ This quick-guide will cover:
 1. [General syntax and formatting](#1-general-syntax-and-formatting)
 2. [Common elements](#2-common-elements)
 3. [How to create and structure documentation pages](#3-how-to-create-and-structure-documentation-pages)
-4. [Themes and templating](#4-basic-templating-and-theming)
+4. [Themes and templating](#4-themes-and-templating)
 5. [Recommended extensions](#5-recommended-extensions)
 
 ## 1. General syntax and formatting
@@ -331,7 +331,7 @@ The chosen theme can be further customized by editing or creating new HTML templ
 ## Styling
 Basic CSS can be used to style the HTML templates. Custom CSS stylesheets can be added to the [_static/css](docs/source/_static/css/theme.css) subfolder. To include the stylesheet when build the HTML files, the path of the CSS stylesheet have to added to the `html_static_path` in the [conf.py](docs/source/conf.py) config file. 
 
-This project comes with an empty CSS stylesheet called [custom.css](docs/source/_static/css/).
+This project comes with an empty CSS stylesheet called [custom.css](docs/source/_static/css/custom.css).
 
 # 5. Recommended extensions
 This section gives an overview of optional extensions, which can be used to improve the experience when editing documentation pages.
