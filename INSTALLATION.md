@@ -1,5 +1,5 @@
 # Quick-start installation guide
-This guide will covers how to
+This guide will cover how to
 1. Clone the project
 2. Install dependencies
 3. Build the project
@@ -35,4 +35,4 @@ The documentation HTML output files can be found under [source/_build](docs/sour
 
 > :warning: It is important that the selected Python interpreter is the same as where the required Python packages are installed. This is true whether the Python packages are installed globally or only in the virtual environment. See *[Manually specify an interpreter](https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter)* for more information.
 
-See the [Recommended extensions](SPHINXGUIDE.md#5-recommended-extensions) section of the [Quick-start Sphinx and reStructuredText guide](SPHINXGUIDE.md) for extensions that can greatly improve the editor experince, such as auto-building and live previews.
+See the [Recommended extensions](SPHINXGUIDE.md#5-recommended-extensions) section of the [Quick-start Sphinx and reStructuredText guide](SPHINXGUIDE.md) for extensions that can greatly improve the editor experience, such as auto-building and live previews.
