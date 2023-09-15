@@ -14,6 +14,16 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   user-interface-design/index
-   user-interface-guidelines/index
-   glossary
+   maintanance-guide/index
+   architecture/index
+   docker-container/index
+   certificates/index
+   logging/index
+   valghalla-tools/index
+   multi-tenancy/index
+   integrations/index
+   database/index
+   health-checks/index
+   unit-tests/index
+   queue-worker/index
+   new-municipality/index
