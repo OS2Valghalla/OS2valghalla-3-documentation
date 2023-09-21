@@ -21,7 +21,7 @@ Requirements on developer machine
 Source Code
 ---------------------
 Github is used to store the source code for the OS2Valghalla project. It uses the following repository:
-<INSERT GITHUB REPO HERE>
+https://github.com/OS2Valghalla/OS2valghalla-3
 
 Requirements
 ---------------------

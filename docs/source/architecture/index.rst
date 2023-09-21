@@ -44,3 +44,41 @@ This layer handles all the communications towards the database and its main purp
 Web
 -------------------
 Contains the Angular applications which is the frontend application. The application is using lazy loading to only load the specific modules that is needed at the time. The application was generated on version 14 of angular and later upgraded to version 15. The web is later hosted on wwwroot under the API. 
+The application is following a module based pattern where each main pages is one module. 
+
+3rd dependencies
+-------------------
+
+OS2Valghalla uses the following 3rd party dependencies:
+
+.. table:: 
+================= ===================================================================================================  ========================================================================= ============================== ==============
+Component         Use                                                                                                  Reference                                                                 License                        Version
+================= ===================================================================================================  ========================================================================= ============================== ==============
+RabbitMQ          Queue                                                                                                https://www.rabbitmq.com/                                                 Mozilla Public License 2.0     3.12.5
+PostgreSQL        Persistent data storage                                                                              https://www.postgresql.org/                                               PostgreSQL License             15
+Docker            Virtualization software                                                                              https://www.docker.com/                                                   Apache License 2.0             24.0.6
+EF Core           Object Relatrional Mapper to the database                                                            https://learn.microsoft.com/en-us/ef/core/                                MIT                            7.09
+MediatR           Mediates communication                                                                               https://github.com/jbogard/MediatR                                        Apache-2.0                     12.0.1
+ITfoxtec          SAML 2.0 integration                                                                                 https://www.itfoxtec.com/IdentitySaml2                                    BSD-3-Clause                   4.8.6
+Fluent validation Validates commands and queries                                                                       https://fluentvalidation.net/                                             Apache-2.0                     11.0
+Automapper        Maps objects                                                                                         https://automapper.org/                                                   MIT                            12.0.1
+Serilog           Logging helper                                                                                       https://github.com/serilog/serilog/aspnetcore/                            Apache-2.0                     7.0.0
+MailKit           SMTP client                                                                                          http://www.mimekit.net/                                                   MIT                            4.2.0
+MassTransit       Abstraction layer to easier code against RabbitMQ.                                                   https://masstransit.io/                                                   Apache-2.0                     8.0.16
+Angular           Frontend framework                                                                                   https://angular.io/                                                       MIT                            15.0.5
+Angular Material  Angular design system                                                                                https://material.angular.io/                                              MIT                            15.0.3
+SubSink           Handle subscription                                                                                  https://github.com/wardbell/subsink                                       MIT                            1.0.2                                                                                
+Transloco         Internationalization                                                                                 https://github.com/ngneat/transloco                                       MIT                            4.2.1
+designsystem.dk   Danish design system                                                                                 https://designsystem.dk/                        
+NetArchTest       Architecture tests                                                                                   https://github.com/BenMorris/NetArchTest                                  MIT                            1.3.2 
+HealthChecks      Help library for health HealthChecks                                                                 https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks            Apache-2.0                     7.0.2
+Dynamic Linq      Helps with LINQ                                                                                      https://dynamic-linq.net/                                                 Apache-2.0                     1.3.2
+ngx-editor        Rich text editor                                                                                     https://github.com/sibiraj-s/ngx-editor                                   MIT                            15.3.0                                                                              
+ngx-file-drop     File drop component                                                                                  https://github.com/georgipeltekov/ngx-file-drop                           MIT                            15.0.0
+mat-timepicker    Time picker                                                                                          https://github.com/tonysamperi/ngx-mat-timepicker                         MIT                            15.1.4                                                                              
+skeleton-loader   Skeleton loader                                                                                      https://github.com/willmendesneto/ngx-skeleton-loader                     MIT                            7.0.0
+xng-breadcrumb    Breadcrumb component                                                                                 https://github.com/udayvunnam/xng-breadcrumb                              MIT                            9.0.0
+xlsx              Xlsx file helper                                                                                     https://github.com/SheetJS/sheetjs                                        Apache-2.0                     0.18.5
+================= ===================================================================================================  ========================================================================= ============================== ==============
+

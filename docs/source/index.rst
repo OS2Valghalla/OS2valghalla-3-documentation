@@ -27,3 +27,4 @@ Contents
    unit-tests/index
    queue-worker/index
    new-municipality/index
+   contribution/index

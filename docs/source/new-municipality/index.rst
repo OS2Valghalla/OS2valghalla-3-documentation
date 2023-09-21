@@ -59,6 +59,6 @@ There is nothing that is needed to do in OS2 Valghalla for the first time user s
 Styling
 -----------
 To change to logo of each municipality go to Administration -> Web -> Contact information an upload a svg file. 
-This file will then be used as a the logo for both the internal and external application. 
+This file will then be used as a the logo for the external application. 
 
 
