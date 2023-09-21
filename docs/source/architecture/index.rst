@@ -46,7 +46,7 @@ Web
 Contains the Angular applications which is the frontend application. The application is using lazy loading to only load the specific modules that is needed at the time. The application was generated on version 14 of angular and later upgraded to version 15. The web is later hosted on wwwroot under the API. 
 The application is following a module based pattern where each main pages is one module. 
 
-3rd dependencies
+3rd party dependencies
 -------------------
 
 OS2Valghalla uses the following 3rd party dependencies:
