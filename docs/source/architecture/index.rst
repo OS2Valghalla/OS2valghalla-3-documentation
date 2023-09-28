@@ -46,6 +46,37 @@ Web
 Contains the Angular applications which is the frontend application. The application is using lazy loading to only load the specific modules that is needed at the time. The application was generated on version 14 of angular and later upgraded to version 15. The web is later hosted on wwwroot under the API. 
 The application is following a module based pattern where each main pages is one module. 
 
+Schema
+---------------
+
+The schema is split up in three different views to make it easier to understand the logic. 
+All applications in the Valghalla projects is charing the same queue and the internal and the external is sharing each tenants database.
+
+Internal application
+~~~~~~~~~~~~~~
+
+The internal application flow looks like this. The internal application is sending out notifications using both email, sms and digital post. 
+The way the application is doing this is by putting a message to the queue so that worker is handling that. 
+Thats why those integrations are not in this schema. 
+
+.. image:: ../images/internal.png
+
+External application
+~~~~~~~~~~~~~~
+
+The external application flow looks like this. 
+As mentioned earlier the tenant database is the same as for the internal application even though theses view are separated.
+
+.. image:: ../images/external.png
+
+Integrations
+~~~~~~~~~~~~~~
+
+The worker and message receiver is handling all the notifications that are being sent out from the system. 
+The internal and external application puts messages in the queue and the worker is then doing jobs based on those messages. 
+
+.. image:: ../images/integrations.png
+
 3rd party dependencies
 -------------------
 

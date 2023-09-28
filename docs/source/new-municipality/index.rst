@@ -44,6 +44,8 @@ Configuration
 * AppConfiguration.Cvr: The municipalitys CVR code. 
 * AppConfiguration.Komkod: The municipalitys Komkod
 * AppConfiguration.SMSSender: Sender name when sending out text messages from the system. 
+* AppConfiguration.MailAddress: Sender address that the system is sending mails from. 
+* AppConfiguration.MailSender: Sender alias that the system use to send mails. 
 * ExternalAuthConfiguration.Authority: The EntityID from the authentication setup 
 * ExternalAuthConfiguration.Issuer: The EntityID from the authentication setup
 * ExternalAuthConfiguration.SigningCertificatePassword: The password for the certificate used in the external authentication.
