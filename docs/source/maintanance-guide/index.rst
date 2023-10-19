@@ -17,7 +17,6 @@ Requirements on developer machine
 *	.Net 7 or higher
 *	.Net tools
 *	RabbitMQ
-*	RabbitMQ Delayed Message
 
 Source Code
 ---------------------
@@ -32,8 +31,7 @@ Requirements
 *	.Net Tools – Information at https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools 
 *	Angular CLI - information at https://angular.io/cli 
 *	RabbitMQ - download at https://www.rabbitmq.com/download.html 
-*	Alternatively build the docker compose on the local dev machine and use RabbitMQ and PostgreSQL from docker.
-*	RabbitMQ Delayed Message - download at https://github.com/rabbitmq/rabbitmq-delayed-message-exchange
+*	Alternatively build the docker compose on the local dev machine and use RabbitMQ and PostgreSQL from docker. 
 
 Setup development
 ---------------------
