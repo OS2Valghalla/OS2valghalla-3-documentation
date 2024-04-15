@@ -1,7 +1,7 @@
 Certificates
 =============
 
-Valghalla is using a few different certificates to be able to use all the integratiosn, this section describes those certificates.
+Valghalla is using a few different certificates to be able to use all the integrations, this section describes those certificates.
 
 Solution certificates
 ---------------
@@ -11,7 +11,7 @@ The solution requires certificates for the following integrations
 * FK Access control authentication
 * MitID authentication
 * CPR, the danish social security register
-* Digital Post, the public electionic post system for all citizen in Denmark
+* Digital Post, the public electionic post system for all citizens in Denmark
 * Some integrations can share certificates across municipals and some require unique certificate for each municipal.
 
 Public/Private
@@ -135,7 +135,7 @@ System configuration
 
 The way the system is built, it is required to do a new system registration for each municipal and do the test procedures in the FK access control registration portal.
 
-Use the Valghalla tools to register the private certificate for the authentication in the internal application. it will be stored in the municipals database.
+Use the Valghalla tools to register the private certificate for the authentication in the internal application. It will be stored in the municipals database.
 
 MitID
 -------------
