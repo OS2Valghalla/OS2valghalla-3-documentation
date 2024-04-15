@@ -110,6 +110,6 @@ ngx-file-drop     File drop component                                           
 mat-timepicker    Time picker                                                                                          https://github.com/tonysamperi/ngx-mat-timepicker                         MIT                            15.1.4                                                                              
 skeleton-loader   Skeleton loader                                                                                      https://github.com/willmendesneto/ngx-skeleton-loader                     MIT                            7.0.0
 xng-breadcrumb    Breadcrumb component                                                                                 https://github.com/udayvunnam/xng-breadcrumb                              MIT                            9.0.0
-xlsx              Xlsx file helper                                                                                     https://github.com/SheetJS/sheetjs                                        Apache-2.0                     0.18.5
+exceljs           Xlsx file helper                                                                                     https://github.com/exceljs/exceljs                                        MIT                            4.4.0
 ================= ===================================================================================================  ========================================================================= ============================== ==============
 
