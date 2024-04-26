@@ -83,6 +83,7 @@ Intially, Valghalla used built-in functionalities from ITfoxtec (https://www.itf
 
 Intial auth implementation
 ~~~~~~~~~~~~~~
+
 .. image:: ../images/initial_auth.png
 
 The first integration with Kombit & MitID we used cookies lifetime directly from the providers so whenever the cookies expired, the client side code will open hidden iframe with same url from main frame. In best scenario, the iframe would not open login page required user input again so the cookies will automatically refreshed, it then callbacks to main frame to trigger any requests failed due to expired cookies again. If iframe took a long time to respond then it's likely that the page in iframe required user to input credential then main frame would reload the page to force user input credential again.
