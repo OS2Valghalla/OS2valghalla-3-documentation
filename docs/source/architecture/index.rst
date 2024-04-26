@@ -83,6 +83,7 @@ Intially, Valghalla used built-in functionalities from ITfoxtec (https://www.itf
 
 Intial auth implementation
 ~~~~~~~~~~~~~~
+.. image:: ../images/initial_auth.png
 
 The first integration with Kombit & MitID we used cookies lifetime directly from the providers so whenever the cookies expired, the client side code will open hidden iframe with same url from main frame. In best scenario, the iframe would not open login page required user input again so the cookies will automatically refreshed, it then callbacks to main frame to trigger any requests failed due to expired cookies again. If iframe took a long time to respond then it's likely that the page in iframe required user to input credential then main frame would reload the page to force user input credential again.
 For most of the time in development and testing, we didn't see any issues but things changed when we launched in production. All the requests in iframe blocked so most of the time, the main frame needed to reload. This was bad user experience.
@@ -92,9 +93,15 @@ New auth implementation
 
 With all the issues we had in initial implementation, we looked into where the root cause is and found that if we somehow can refresh the cooikes from backend only without relying on providers then the issue will be solved. We implemented a custom token key binding to out 1st party cookie, this token key created after user has successfult authenticated from providers. We store encrypted tokens to our database and compare them with all the requests come in to our systems to verify if users are authorized or not.
 
+.. image:: ../images/internal_auth.png
+
 For Kombit provider used in internal app, the tokens also keeps changing every 30 minutes to make sure the keys are not the same for a long time for security measure. If users not doing anything for 1 hour then the token expire, they will then need to authenticate again directly from providers.
 
+.. image:: ../images/external_auth.png
+
 For MitId provider used in external app, the tokens last only 1 hour without generating new one. This is due to nature that external app has anonymous mode require no login.
+
+.. image:: ../images/database_auth.png
 
 The token (Id + Code hased to base64) included in cookie that send to browser contains NO PII data. The PII data (Value) is encrypted before writing to database to make sure NO one can read it even database administrator.
 The encryption we use is based on Microsoft state of the art data protection. A background job will run every 4 hours to remove expired tokens in database to ensure the size will not grow too big overtime.
