@@ -4,7 +4,7 @@ Queue and worker
 Valghalla is using RabbitMQ as a queue for different events, both the internal and the external application is acting on different queues. 
 Then there is also Valghalla worker that is acting on some of the queues.
 
-There are currently five different queues being used in the solution. 
+There are currently these different queues being used in the solution. 
 
 * AuditLogClearJob. Run every 7 days / 168 hours to clear audit logs when users modify data and access participant as well as CPR service. Only logs that 6 months old will be deleted. The time can be configured in the settings.
 * CommunicationLogClearJob. Run every 7 days / 168 hours to clear communication logs. Only logs that 4 months old will be deleted. The time can be configured in the settings.
